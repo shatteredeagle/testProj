@@ -4,7 +4,6 @@ resource "azurerm_container_group" "cg1" {
   resource_group_name = azurerm_resource_group.rg.name
   ip_address_type     = "private"
   network_profile_id  = azurerm_network_profile.nprofile1.id
-  dns_name_label      = "aci-label"
   os_type             = "Linux"
 
   container {
